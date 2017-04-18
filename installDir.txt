@@ -97,15 +97,14 @@ Save both public and private keys in known secure location.
 You can now create repository with SSH URI and synchronize.
 weird is that when you save the public key, the format changes a bit and is not recognized. 
 
-<<<<<<< HEAD
-=======
+
 Clone
 git clone -b chapter-03 https://github.com/simonholmes/getting-MEAN.git
 copy the contents to a loc8r folder and then run npm install on that folder to install packages.
 then run nodemon or npm start and you are done.
 also make sure to replace the .git folder to make sure you have the correct repository info.
 
->>>>>>> 1b3832fa432ac915a858d6e2d9f6f1095f7258c5
+
 express setup
 create package.json in loc8r folder with default packages.
 open bash in loc8r folder and run express
