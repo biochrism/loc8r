@@ -1,0 +1,131 @@
+To Clone It
+
+git clone -b chapter-03 https://github.com/simonholmes/getting-MEAN.git
+copy the contents to a loc8r folder and then run npm install on that folder to install packages.
+then run nodemon or npm start and you are done.
+also make sure to replace the .git folder to make sure you have the correct repository info.
+check the file names of the jquery, bootstrap, etc; the error will usually point you...
+access site via http://localhost:3000/
+
+Three ways so far to start the app:
+npm start
+nodemon
+heroku local:start
+
+
+node.js
+https://nodejs.org/en/download/
+C:\Program Files\nodejs\
+node --version
+npm --version
+
+nodemon
+npm install -g nodemon
+
+express
+https://expressjs.com/en/starter/installing.html
+npm install -g express-generator
+express --version
+
+mongodb
+https://www.mongodb.com/download-center#community
+C:\Program Files\MongoDB\Server\3.4\bin
+add to path;
+mongo --version
+mongod --version
+as a service:
+	create c:\data\db
+	create c:\data\log
+	create mongod.cfg in C:\Program Files\MongoDB\Server\3.4 :
+		systemLog:
+		  destination: file
+		  path: c:\data\log\mongod.log
+		storage:
+    		  dbPath: c:\data\db
+	sc.exe create MongoDB binPath= "\"C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe\" --service --config=\"C:\Program Files\MongoDB\Server\3.4\mongod.cfg\"" DisplayName= "MongoDB" start= "auto"
+	manually start the MongoDB service.
+	(https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)
+
+angular
+https://angularjs.org/
+copy angular.min.js in C:\Virtual Machines\vm\temp\mu\c\Web\Stack\mean\loc8r\angular
+
+bootstrap
+http://getbootstrap.com/getting-started/#download
+download, extract, copy to C:\Virtual Machines\vm\temp\mu\c\Web\Stack\mean\loc8r\public
+
+jquery
+http://jquery.com/download/
+download, copy to C:\Virtual Machines\vm\temp\mu\c\Web\Stack\mean\loc8r\public\javascripts
+
+amelia
+https://github.com/simonholmes/amelia
+download, extract, copy to C:\Virtual Machines\vm\temp\mu\c\Web\Stack\mean\loc8r\public\bootstrap\css
+
+git
+https://git-scm.com/download/win
+C:\Program Files\Git
+Use only in Bash window.
+git --version
+
+heroku toolbar
+https://blog.heroku.com/the_heroku_toolbelt
+uncheck git
+C:\Program Files\Heroku
+heroku --version
+heroku login
+The Truth:
+toolbar used to include foreman but no more. the toolbelt installs the heroku CLI
+which installs the heroku local.  You can use heroku local to run your procfile apps
+instead of using foreman, here how:
+open bash on loc8r and run:
+heroku local:start
+you can now access the app at http://localhost:5000
+Per book, make sure the procfile is in the app root folder with:
+web: npm start
+
+
+
+source tree
+https://www.sourcetreeapp.com/
+
+SSH Keys
+sourcetree, tools, create or import ssh keys, Generate.
+Immediately copy the public key to use it on GitHub.
+GitHub, profile, Settings, SSH and GPG keys, New SSH key, name it and paste public.
+Save both public and private keys in known secure location.
+You can now create repository with SSH URI and synchronize.
+weird is that when you save the public key, the format changes a bit and is not recognized. 
+
+<<<<<<< HEAD
+=======
+Clone
+git clone -b chapter-03 https://github.com/simonholmes/getting-MEAN.git
+copy the contents to a loc8r folder and then run npm install on that folder to install packages.
+then run nodemon or npm start and you are done.
+also make sure to replace the .git folder to make sure you have the correct repository info.
+
+>>>>>>> 1b3832fa432ac915a858d6e2d9f6f1095f7258c5
+express setup
+create package.json in loc8r folder with default packages.
+open bash in loc8r folder and run express
+then run npm install 
+open bash in loc8r folder using local path, c:\... and run npm start
+web server should start listening on local host at port 3000.
+Access localhost:3000 via browser and you will see logging on the console.
+
+restart app
+install nodemon: npm install -g nodemon
+you can no start the app by just typing nodemon
+access it via browser again. 
+
+
+ 
+
+
+
+
+
+
+
+
